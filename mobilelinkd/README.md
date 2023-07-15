@@ -31,13 +31,13 @@ The first thing you want to do is setup the connection to your modem. You can se
 For the serial port, look at the device manager to figure out what what comport to use.
 ![properties(images/agwpe_properties.png)
 
-a
-
-
+Duplicate these settings
 ![portsetup](images/agwpe_portsetup.png)
 
+Duplicate these settings and click on "Default 1200}
 ![tnc commands](images/agwpe_tnc_commands.png)
 
-a
+Click OK to save the settings.
+
 ![outpost setup](images/outpost-setup.png)
 
