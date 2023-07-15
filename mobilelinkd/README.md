@@ -29,15 +29,24 @@ The first thing you want to do is setup the connection to your modem. You can se
 
 #### TNC Setup values
 For the serial port, look at the device manager to figure out what what comport to use.
+![portsetup](images/device_manager.png)
+You see the bluetooth serial ports, com6 and com7, serpate comport for incoming and outgoing.  We will use the USB serial port, com8.
+
+
+Click "New Port" to setup another modem. Or Select a port and click OK to edit the settings of an existing port.
 ![properties(images/agwpe_properties.png)
 
 Duplicate these settings
+
 ![portsetup](images/agwpe_portsetup.png)
 
 Duplicate these settings and click on "Default 1200}
+
 ![tnc commands](images/agwpe_tnc_commands.png)
 
 Click OK to save the settings.
+
+
 
 ![outpost setup](images/outpost-setup.png)
 
