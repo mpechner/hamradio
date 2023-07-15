@@ -4,6 +4,7 @@ http://www.mobilinkd.com/
 This is an interesting device in that it offers both bluetooth and USB sereial connectivity. Althought if connecting to a PC or Mac, use the serial port via the USB C port.  Bluetooth shows up as 2 serial ports.  One incoming and one outgoing.
 
 ## Window 11/AGWPE/Outpost Ipagwpe
+This is just an organized brain dump.  Fee free to sumbit a PR or email notes. Happy to update.
 ### Connections
 Use a cable to connect the USB C port on the mofem to your PC.
 Ise the correct interface cable to connect to the radio. I am using a FT-8800.  So the 3.5mm TRRS audio connector/mini din 6 cable is what I am using for 1200 baud communication. The minidin M/F cable was not need for me.
@@ -25,6 +26,7 @@ To start agwpe run c:\agwpe\AWS Packet Engine.exe.  The banner for agwpe might o
 Agwpe is top row, 3nd to the left.  The 2 antnenna towers with the modem in te middle. Right click it and you will see the menu. Once you setup and connect to the tnc, the icon 2nd to the left, modem icon, in the top row will show up.
 
 If you right click on the agwpe icon this is the menu.
+
 ![menu](images/agwpemenu.png)
 
 #### TNC Setup Values
