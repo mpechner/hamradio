@@ -5,6 +5,9 @@ This is an interesting device in that it offers both bluetooth and USB sereial c
 
 ## Window 11/AGWPE/Outpost Ipagwpe
 This is just an organized brain dump.  Fee free to sumbit a PR or email notes. Happy to update.
+
+As I get additional configurations working I'll add to this page.  I want to try direwolf from windows and raspberry pi.  Different radios, kenwood TH d-7a, yeasu vx-5. Sound card like the dinah.
+
 ### Connections
 Use a cable to connect the USB C port on the mofem to your PC.
 Ise the correct interface cable to connect to the radio. I am using a FT-8800.  So the 3.5mm TRRS audio connector/mini din 6 cable is what I am using for 1200 baud communication. The minidin M/F cable was not need for me.
