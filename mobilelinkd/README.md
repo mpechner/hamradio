@@ -1,5 +1,5 @@
-# Mobilelinkd TNC 4
-http://www.mobilelinkd.com/
+# Mobilinkd  TNC 4
+http://www.Mobilinkd .com/
 
 This is an interesting device in that it offers both bluetooth and USB serial connectivity. Although if connecting to a PC or Mac, use the serial port via the USB C port.  Bluetooth shows up as 2 serial ports.  One incoming and one outgoing.
 
@@ -74,7 +74,7 @@ If  double check the settings.
 + Make sure you see both the agwpe icon and the modem icon.
 + Make sure your radio is on set to the correct frequency. And set to the corrct speed.
 + If using the mini din 6, is it seated correctly? Do you need the  M/F cable ?
-  Check the page for an explanation of this cable https://store.mobilelinkd.com/collections/tnc-cables/products/minidin-6-1200-baud-adapter
+  Check the page for an explanation of this cable https://store..com/collections/tnc-cables/products/minidin-6-1200-baud-adapter
 + Ipagwpe port and agwpe port match?
 + Baud rate for mode 115000?
 
