@@ -1,16 +1,16 @@
 # Mobilelinkd TNC 4
-http://www.mobilinkd.com/
+http://www.mobilelinkd.com/
 
-This is an interesting device in that it offers both bluetooth and USB sereial connectivity. Althought if connecting to a PC or Mac, use the serial port via the USB C port.  Bluetooth shows up as 2 serial ports.  One incoming and one outgoing.
+This is an interesting device in that it offers both bluetooth and USB serial connectivity. Although if connecting to a PC or Mac, use the serial port via the USB C port.  Bluetooth shows up as 2 serial ports.  One incoming and one outgoing.
 
 ## Window 11/AGWPE/Outpost Ipagwpe
-This is just an organized brain dump.  Fee free to sumbit a PR or email notes. Happy to update.
+This is just an organized brain dump.  Feel free to sumbit a PR or email notes. Happy to update.
 
 As I get additional configurations working I'll add to this page.  I want to try direwolf from windows and raspberry pi.  Different radios, kenwood TH d-7a, yeasu vx-5. Sound card like the dinah.
 
 ### Connections
 Use a cable to connect the USB C port on the mofem to your PC.
-Ise the correct interface cable to connect to the radio. I am using a FT-8800.  So the 3.5mm TRRS audio connector/mini din 6 cable is what I am using for 1200 baud communication. The minidin M/F cable was not need for me.
+Use the correct interface cable to connect to the radio. I am using a FT-8800.  So the 3.5mm TRRS audio connector/mini din 6 cable is what I am using for 1200 baud communication. The minidin M/F cable was not needed for me.
 ### Packages to Download
 
 #### Outpost
@@ -74,7 +74,7 @@ If  double check the settings.
 + Make sure you see both the agwpe icon and the modem icon.
 + Make sure your radio is on set to the correct frequency. And set to the corrct speed.
 + If using the mini din 6, is it seated correctly? Do you need the  M/F cable ?
-  Check the page for an explanation of this cable https://store.mobilinkd.com/collections/tnc-cables/products/minidin-6-1200-baud-adapter
+  Check the page for an explanation of this cable https://store.mobilelinkd.com/collections/tnc-cables/products/minidin-6-1200-baud-adapter
 + Ipagwpe port and agwpe port match?
 + Baud rate for mode 115000?
 
