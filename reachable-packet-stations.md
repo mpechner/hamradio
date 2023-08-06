@@ -6,6 +6,8 @@ Station:
 *  On 2nd floor
 *  FT-8800 15W
 
+My station is not up very often. Using a Mac and minicom.
+
 Northern California DB of stations: https://ncpa.n0ary.org/digital_db/index.php
 
 # 145.050
