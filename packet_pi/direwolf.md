@@ -1,7 +1,9 @@
-# Direwold ona rapsberry pi
+# Direwolf on a rapsberry pi
 
  Will try these instructions first. 
- * Main Article: https://www.vnutz.com/articles/direwolf_on_a_raspberry_pi_for_mobile_aprs
+ * Main Article:
+ ** https://www.vnutz.com/articles/direwolf_on_a_raspberry_pi_for_mobile_aprs
+ ** https://www.trinityos.com/HAM/CentosDigitalModes/RPi/rpi4-setup.html
  * some build notes: https://www.marrold.co.uk/2019/04/installing-direwolf-15-on-raspberry-pi.html
  * gps libs: https://lindevs.com/install-build-essential-on-raspberry-pi
  * avahi: https://groups.google.com/g/aprsfi/c/Libx5hd_r_U?pli=1
