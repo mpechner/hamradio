@@ -11,11 +11,10 @@
 
  Installing a minimalist headless pi raspberry pi os
 
- apt install git cmake
-
- sudo apt install libasound2-dev libudev-dev
- apt-get install  alsa-utils gpsd libgps-dev
- sudo apt install libavahi-client-dev
+    apt install git cmake
+    sudo apt install libasound2-dev libudev-dev
+    apt-get install  alsa-utils gpsd libgps-dev
+    sudo apt install libavahi-client-dev
  
 sudo apt install -y build-essential - already there
 
@@ -30,3 +29,32 @@ sudo apt install -y build-essential - already there
 *  make install-conf
 
 ## thismuch done 8/9/2023
+# additional config from Dav id's doc
+
+https://www.trinityos.com/HAM/CentosDigitalModes/RPi/rpi4-setup.html
+
+    sudo systemctl disable ModemManager
+    sudo systemctl disable ModemManager
+    sudo systemctl stop brltty-udev.service
+    sudo systemctl mask brltty-udev.service
+    sudo systemctl stop brltty.service
+    sudo systemctl disable brltty.service
+
+    sudo apt install lsof gpm minicom psmisc
+
+
+## watchdog setuop
+    sudo apt install watchdog
+
+     sudo vim /etc/watchdog.conf
+         --
+         watchdog-device        = /dev/watchdog
+
+         max-load-1             = 24
+         max-load-5             = 18
+         max-load-15            = 12
+
+    sudo systemctl enable watchdog
+    sudo systemctl start watchdog.service
+
+ 
