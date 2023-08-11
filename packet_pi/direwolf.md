@@ -11,7 +11,7 @@
 
  Installing a minimalist headless pi raspberry pi os
 
-    apt install git cmake
+    sudo apt install build-essential autoconf automake libtool checkinstall git cmake
     sudo apt install libasound2-dev libudev-dev
     apt-get install  alsa-utils gpsd libgps-dev
     sudo apt install libavahi-client-dev
@@ -57,4 +57,9 @@ https://www.trinityos.com/HAM/CentosDigitalModes/RPi/rpi4-setup.html
     sudo systemctl enable watchdog
     sudo systemctl start watchdog.service
 
- 
+ # 18 Build and install the AX.25 packages from the VE7FET GIT repository
+
+Jump to this section in https://www.trinityos.com/HAM/CentosDigitalModes/RPi/rpi4-setup.html
+
+
+
