@@ -86,3 +86,85 @@ udp        0      0 0.0.0.0:631             0.0.0.0:*
 68 is DHCP so do not block
 
 631 is print printing, disable  `sudo systemctl disable cups`
+
+
+# 4.a Harden the Raspbian installation
+On Bullseye the following are running
+
+```
+mpechner@packet:~ $ systemctl --type=service --state=running
+  UNIT                      LOAD   ACTIVE SUB     DESCRIPTION
+  bluetooth.service         loaded active running Bluetooth service
+  colord.service            loaded active running Manage, Install and Generate Color Profiles
+  cron.service              loaded active running Regular background program processing daemon
+  cups-browsed.service      loaded active running Make remote CUPS printers available locally
+  cups.service              loaded active running CUPS Scheduler
+  dbus.service              loaded active running D-Bus System Message Bus
+  dhcpcd.service            loaded active running DHCP Client Daemon
+  getty@tty1.service        loaded active running Getty on tty1
+  ModemManager.service      loaded active running Modem Manager
+  polkit.service            loaded active running Authorization Manager
+  rng-tools-debian.service  loaded active running LSB: rng-tools (Debian variant)
+  rsyslog.service           loaded active running System Logging Service
+  rtkit-daemon.service      loaded active running RealtimeKit Scheduling Policy Service
+  ssh.service               loaded active running OpenBSD Secure Shell server
+  systemd-journald.service  loaded active running Journal Service
+  systemd-logind.service    loaded active running User Login Management
+  systemd-timesyncd.service loaded active running Network Time Synchronization
+  systemd-udevd.service     loaded active running Rule-based Manager for Device Events and Files
+  triggerhappy.service      loaded active running triggerhappy global hotkey daemon
+  user@1000.service         loaded active running User Manager for UID 1000
+  wpa_supplicant.service    loaded active running WPA supplicant
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+21 loaded units listed.
+```
+For each service to be stopped, run botth stop and disable
+```
+sudo systemctl stop bluetooth
+sudo systemctl disable bluetooth
+```
+
+These services are ok
+```
+mpechner@packet:~ $ systemctl --type=service --state=running
+  UNIT                      LOAD   ACTIVE SUB     DESCRIPTION
+  colord.service            loaded active running Manage, Install and Generate Color Profiles
+  cron.service              loaded active running Regular background program processing daemon
+  dbus.service              loaded active running D-Bus System Message Bus
+  dhcpcd.service            loaded active running DHCP Client Daemon
+  getty@tty1.service        loaded active running Getty on tty1
+  polkit.service            loaded active running Authorization Manager
+  rng-tools-debian.service  loaded active running LSB: rng-tools (Debian variant)
+  rsyslog.service           loaded active running System Logging Service
+  rtkit-daemon.service      loaded active running RealtimeKit Scheduling Policy Service
+  ssh.service               loaded active running OpenBSD Secure Shell server
+  systemd-journald.service  loaded active running Journal Service
+  systemd-logind.service    loaded active running User Login Management
+  systemd-timesyncd.service loaded active running Network Time Synchronization
+  systemd-udevd.service     loaded active running Rule-based Manager for Device Events and Files
+  triggerhappy.service      loaded active running triggerhappy global hotkey daemon
+  user@1000.service         loaded active running User Manager for UID 1000
+  wpa_supplicant.service    loaded active running WPA supplicant
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+18 loaded units listed.
+```
+
+# 5.b Disable brltty from taking over serial ports
+Not present in bullseye
+
+# latest linpac:
+sudo dpkg --install linpac_0.28-1_armhf.deb
+
+```
+For Raspbian version Buster (Debian 10.x and later) ONLY:
+      -----------------------------------------------
+         sudo checkinstall --pkgname linpac --pkgversion 0.29 --pkgrelease 1 --pkggroup \
+         hamradio --pkgsource https://sourceforge.net/projects/linpac/files/LinPac/ --maintainer \
+         ki6zhdattrinityos.com --provides linpac --requires libax25,ax25-apps,ax25-tools,libncurses6 make install
+```
